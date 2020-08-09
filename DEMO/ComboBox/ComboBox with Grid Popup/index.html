@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ComboBox with Grid Popup Accessibility Demo</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <label for="ex1-input" id="ex1-label" class="combobox-label">
+      Fruits and vegetables
+    </label>
+    <div class="combobox-wrapper">
+      <div
+        role="combobox"
+        aria-expanded="false"
+        aria-owns="ex1-grid"
+        aria-haspopup="grid"
+        id="ex1-combobox"
+      >
+        <input
+          type="text"
+          aria-autocomplete="list"
+          aria-controls="ex1-grid"
+          id="ex1-input"
+        />
+      </div>
+      <div
+        aria-labelledby="ex1-label"
+        role="grid"
+        id="ex1-grid"
+        class="grid hidden"
+      ></div>
+    </div>
+    <script type="text/javascript" src="../../Utils/utils.js"></script>
+    <script type="text/javascript" src="grid-combobox.js"></script>
+    <script type="text/javascript" src="grid-combo-example.js"></script>
+  </body>
+</html>
