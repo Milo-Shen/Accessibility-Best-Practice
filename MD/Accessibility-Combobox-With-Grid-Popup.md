@@ -56,4 +56,32 @@ When visual focus is in the grid, DOM focus remains on the textbox and the value
 |            | `aria-selected=true`    | `div`   | 1. Specified on a row in the grid when it is visually indicated as selected.<br/>2. Occurs only when a cell in the grid is referenced by `aria-activedescendant`. |
 | `gridcell` |                         | `div`   | Identifies the element containing the content for a single cell. |
 
+## Basic Example
 
+```
+<label for="ex1-input" id="ex1-label" class="combobox-label">
+  Fruits and vegetables
+</label>
+<div class="combobox-wrapper">
+  <div
+    role="combobox"
+    aria-expanded="false"
+    aria-owns="ex1-grid"
+    aria-haspopup="grid"
+    id="ex1-combobox"
+  >
+    <input
+      type="text"
+      aria-autocomplete="list"
+      aria-controls="ex1-grid"
+      id="ex1-input"
+    />
+  </div>
+  <div
+    aria-labelledby="ex1-label"
+    role="grid"
+    id="ex1-grid"
+    class="grid hidden"
+  ></div>
+</div>
+```
