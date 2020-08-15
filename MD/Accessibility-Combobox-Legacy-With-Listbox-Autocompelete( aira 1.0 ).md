@@ -1,4 +1,4 @@
-# Combobox with List Autocomplete ( aria 1.0 )
+# [Legacy] Combobox with List Autocomplete ( aria 1.0 )
 This example illustrates the autocomplete behavior known as list autocomplete with manual selection.
 
 ## Keyboard Support

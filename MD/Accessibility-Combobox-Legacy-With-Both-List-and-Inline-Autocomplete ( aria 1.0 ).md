@@ -1,4 +1,4 @@
-# Combobox With Both List and Inline Autocomplete ( aria 1.0 )
+# [Legacy] Combobox With Both List and Inline Autocomplete ( aria 1.0 )
 
 This example illustrates the autocomplete behavior referred to in the pattern as list with inline completion.
 
