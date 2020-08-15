@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>
-      Combobox With Both List and Inline Autocomplete Accessibility Demo
+      Combobox with List Autocomplete Accessibility Demo ( aria 1.0 )
     </title>
-    <link rel="stylesheet" href="combobox.css" />
     <link rel="stylesheet" href="listbox.css" />
+    <link rel="stylesheet" href="combobox-1.0.css" />
   </head>
   <body>
     <div class="combobox-list">
@@ -17,14 +17,14 @@
           class="cb_edit"
           type="text"
           role="combobox"
-          aria-autocomplete="both"
+          aria-autocomplete="list"
           aria-expanded="false"
           aria-haspopup="true"
-          aria-owns="lb1"
+          aria-owns="cb1-listbox"
         />
-        <button id="cb1-button" aria-label="Open" tabindex="-1">&#9661;</button>
+        <button id="cb1-button" tabindex="-1" aria-label="Open">&#9661;</button>
       </div>
-      <ul id="lb1" role="listbox" aria-label="States">
+      <ul id="cb1-listbox" role="listbox" aria-label="States">
         <li id="lb1-al" role="option">Alabama</li>
         <li id="lb1-ak" role="option">Alaska</li>
         <li id="lb1-as" role="option">American Samoa</li>
@@ -84,7 +84,7 @@
       </ul>
     </div>
     <script type="text/javascript" src="../../Utils/utils.js"></script>
-    <script type="text/javascript" src="combox-list.js"></script>
+    <script type="text/javascript" src="combobox-1.0-list.js"></script>
     <script type="text/javascript" src="listbox.js"></script>
     <script type="text/javascript" src="listboxOption.js"></script>
   </body>

@@ -1,4 +1,4 @@
-# Combobox With Both List and Inline Autocomplete
+# Combobox With Both List and Inline Autocomplete ( aria 1.0 )
 
 This example illustrates the autocomplete behavior referred to in the pattern as list with inline completion.
 
@@ -58,7 +58,7 @@ This example illustrates the autocomplete behavior referred to in the pattern as
 | `option`  |                        | `li`    | 1. Identifies the element as a `listbox` `option`.<br/>2. The text content of the element provides the accessible name of the `option`. |
 |           | `aria-selected="true"` | `li`    | 1. Specified on an option in the listbox when it is visually highlighted as selected.<br/>2. Occurs when an option in the list is referenced by `aria-activedescendant` and when focus is in the textbox and the first option is automatically selected. |
 
-## HTML Example 
+## Basic Example - HTML
 
 ```
 <div class="combobox-list">
