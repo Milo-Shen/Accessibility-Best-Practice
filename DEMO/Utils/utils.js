@@ -75,9 +75,9 @@ aria.Utils.isFocusable = function (element) {
 
   switch (element.nodeName) {
     case "A":
-      return !!element.href && element.rel != "ignore";
+      return !!element.href && element.rel !== "ignore";
     case "INPUT":
-      return element.type != "hidden" && element.type != "file";
+      return element.type !== "hidden" && element.type !== "file";
     case "BUTTON":
     case "SELECT":
     case "TEXTAREA":
